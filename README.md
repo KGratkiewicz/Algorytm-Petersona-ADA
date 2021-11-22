@@ -107,4 +107,4 @@ end Main;
 
 ```
 ---
-&copy Jakub Grątkiewicz
+&copy; Jakub Grątkiewicz
