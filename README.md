@@ -9,6 +9,29 @@ Algortym Petersona rozwiązuje problem wzajemnego wykluczania, czyli zapewnia w�
 ### Problem wzajemnego wykluczania
 Problem wzajemnego wykluczania występuje wtedy kiedy conajmniej dwa procesy, chcą skorzystać z zasobu współdzielonego. Muszą one jednak skorzystać z niego jeden po drugim, aby nie "wtrącać się" jeden drugiemu. Dostęp do takiego zasobu współdzielonego nazywa się sekcją krytyczną procesu. W naszym przypadku zasobem współdzielonym jest specjalna zmienna, o nazwie `zasob_wspoldzieloy` co widać odrazu, oraz mniej oczywiste - ekran konsoli.
 
+## Działanie programu
+Program ma stworzone dwa zadania (task), których zadaniem jest przeczytanie `zasob_wspoldzielony` oraz wypisanie komunikatu na ekranie w odpowiedniej kolumnie. Każde zadanie 100 razy wykonuje sekcję lokalną oraz sekcję krytyczną, oznaczoną w kodzie komentarzem. Do symulacji sekcji lokalnej użyta została funkcja opóźniająca `delay`, o losowym parametrze, alby zasymulować różnorodność trwania sekcji lokalnej w procesach.
+
+### Output działąnia programu (fragment)
+```
+P1 nr 86, odczyt : ostatnio pisal -> P2
+                                       P2 nr 85, odczyt : ostatnio pisal -> P1
+P1 nr 87, odczyt : ostatnio pisal -> P2
+                                       P2 nr 86, odczyt : ostatnio pisal -> P1
+P1 nr 88, odczyt : ostatnio pisal -> P2
+                                       P2 nr 87, odczyt : ostatnio pisal -> P1
+                                       P2 nr 88, odczyt : ostatnio pisal -> P2
+P1 nr 89, odczyt : ostatnio pisal -> P2
+                                       P2 nr 89, odczyt : ostatnio pisal -> P1
+P1 nr 90, odczyt : ostatnio pisal -> P2
+P1 nr 91, odczyt : ostatnio pisal -> P1
+                                       P2 nr 90, odczyt : ostatnio pisal -> P1
+P1 nr 92, odczyt : ostatnio pisal -> P2
+                                       P2 nr 91, odczyt : ostatnio pisal -> P1
+```
+
+### Plik główny
+
 ```
 with Ada.Strings.Fixed; use Ada.Strings.Fixed;
 with RandomPackage ; use RandomPackage;
