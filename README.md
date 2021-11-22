@@ -33,8 +33,11 @@ P1 nr 92, odczyt : ostatnio pisal -> P2
 ### Kod żródłowy 
 
 lokalizajca:
+
 [src/main.adb](/src/main.adb) - plik główny main
+
 [src/RandomPackage.ads](/src/RandomPackage.ads) - pakiet RandomPackage
+
 [src/RandomPackage.adb](/src/RandomPackage.adb) - pakiet RandomPackage - ciało
 
 
