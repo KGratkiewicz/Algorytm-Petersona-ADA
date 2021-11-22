@@ -17,7 +17,7 @@ procedure Main is
    begin
       for i in 1..licznik loop
          -- sekcja lokalna BEG
-         delay(Standard.Duration(RandomInt(3)));
+         delay(Standard.Duration(RandomInt(5)));
          -- sekcja lokalna END
          K1 := 0;
          czyja_kolej := 2;
@@ -27,7 +27,7 @@ procedure Main is
          -- sekcja krytyczna BEG
          Set_Col(kolumna);
          Put("P1 nr ");
-         Put(i,1);
+         Put(i,3);
          Put(", odczyt : ostatnio pisal -> P");
          Put(zasob_wspoldzielony, 1);
          zasob_wspoldzielony := 1;
@@ -39,11 +39,11 @@ procedure Main is
 
    task body P2 is
       licznik : Integer := 100;
-      kolumna : Positive_Count := 40;
+      kolumna : Positive_Count := 45;
    begin
       for i in 1..licznik loop
          -- sekcja lokalna BEG
-         delay(Standard.Duration(RandomInt(3)));
+         delay(Standard.Duration(RandomInt(5)));
          -- sekcja lokalna END
          K2 := 0;
          czyja_kolej := 1;
@@ -53,7 +53,7 @@ procedure Main is
          -- sekcja krytyczna BEG
          Set_Col(kolumna);
          Put("P2 nr ");
-         Put(i,1);
+         Put(i,3);
          Put(", odczyt : ostatnio pisal -> P");
          Put(zasob_wspoldzielony, 1);
          zasob_wspoldzielony := 2;
