@@ -14,20 +14,21 @@ Program ma stworzone dwa zadania (task), których zadaniem jest przeczytanie `za
 
 ### Output działąnia programu (fragment)
 ```
-P1 nr 86, odczyt : ostatnio pisal -> P2
-                                       P2 nr 85, odczyt : ostatnio pisal -> P1
-P1 nr 87, odczyt : ostatnio pisal -> P2
-                                       P2 nr 86, odczyt : ostatnio pisal -> P1
-P1 nr 88, odczyt : ostatnio pisal -> P2
-                                       P2 nr 87, odczyt : ostatnio pisal -> P1
-                                       P2 nr 88, odczyt : ostatnio pisal -> P2
-P1 nr 89, odczyt : ostatnio pisal -> P2
-                                       P2 nr 89, odczyt : ostatnio pisal -> P1
-P1 nr 90, odczyt : ostatnio pisal -> P2
-P1 nr 91, odczyt : ostatnio pisal -> P1
-                                       P2 nr 90, odczyt : ostatnio pisal -> P1
-P1 nr 92, odczyt : ostatnio pisal -> P2
-                                       P2 nr 91, odczyt : ostatnio pisal -> P1
+P1 nr  30, odczyt : ostatnio pisal -> P2
+                                            P2 nr  28, odczyt : ostatnio pisal -> P1
+P1 nr  31, odczyt : ostatnio pisal -> P2
+                                            P2 nr  29, odczyt : ostatnio pisal -> P1
+                                            P2 nr  30, odczyt : ostatnio pisal -> P2
+                                            P2 nr  31, odczyt : ostatnio pisal -> P2
+P1 nr  32, odczyt : ostatnio pisal -> P2
+                                            P2 nr  32, odczyt : ostatnio pisal -> P1
+P1 nr  33, odczyt : ostatnio pisal -> P2
+P1 nr  34, odczyt : ostatnio pisal -> P1
+                                            P2 nr  33, odczyt : ostatnio pisal -> P1
+P1 nr  35, odczyt : ostatnio pisal -> P2
+                                            P2 nr  34, odczyt : ostatnio pisal -> P1
+P1 nr  36, odczyt : ostatnio pisal -> P2
+
 ```
 
 ### Kod żródłowy 
