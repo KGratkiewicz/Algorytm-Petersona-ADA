@@ -6,6 +6,8 @@ Plik projektowy ze środowiska [GNAT Studio | Adacore](https://www.adacore.com/g
 ## Algorytm Petersona
 Algortym Petersona rozwiązuje problem wzajemnego wykluczania, czyli zapewnia własność bezpieczeństwa [programu współbieżnego](https://pl.wikipedia.org/wiki/Przetwarzanie_wsp%C3%B3%C5%82bie%C5%BCne).
 
+Zobacz też -> [Algorytm Dekkera](https://github.com/KGratkiewicz/Algorytm-Dekkera-ADA.git) -< który pełni tę samą funkcję !
+
 ### Problem wzajemnego wykluczania
 Problem wzajemnego wykluczania występuje wtedy kiedy conajmniej dwa procesy, chcą skorzystać z zasobu współdzielonego. Muszą one jednak skorzystać z niego jeden po drugim, aby nie "wtrącać się" jeden drugiemu. Dostęp do takiego zasobu współdzielonego nazywa się sekcją krytyczną procesu. W naszym przypadku zasobem współdzielonym jest specjalna zmienna, o nazwie `zasob_wspoldzieloy` co widać na pierwszy rzut oka, oraz mniej oczywiste - ekran konsoli.
 
