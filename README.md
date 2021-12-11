@@ -33,7 +33,7 @@ P1 nr  36, odczyt : ostatnio pisal -> P2
 
 ```
 
-### Kod żródłowy 
+### Kod źródłowy 
 
 lokalizajca:
 
